@@ -1,0 +1,12 @@
+server:
+  port: 8099
+
+kafka:
+  bootstrap-servers: 127.0.0.1:9092
+  mode: 'PLAINTEXT'
+  consumer:
+    group-id: rukafka_listener
+    key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+    value-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+    topic:
+      send-message-topic: message-topic
