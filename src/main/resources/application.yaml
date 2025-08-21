@@ -9,4 +9,10 @@ kafka:
     key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
     value-deserializer: org.apache.kafka.common.serialization.StringDeserializer
     topic:
-      send-message-topic: message-topic
+      send-message-topic: message-topic-1
+
+  producer:
+    key-serializer: org.apache.kafka.common.serialization.StringSerializer
+    value-serializer: org.apache.kafka.common.serialization.StringSerializer
+    topic:
+      send-message-topic: message-topic-2
